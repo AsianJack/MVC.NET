@@ -1,0 +1,47 @@
+﻿@model IEnumerable<MVC.NET.Models.Departament>
+
+@{
+    ViewData["Title"] = "Departament";
+}
+
+<h1>Departament</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>    
+                @Html.DisplayNameFor(model => model.Id)<!--automaticamente ele pega do controller department, e como nesse caso eu havia deixado
+                    um id e um nome no controllador ele automaticamente puxou os dois e deixou em formato de lista
+                -->
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--Por causa de ser meio que automatico o reconhecimento das pastas e arquivos ao utilizar o foreach e chamar apenas o model
+            ele ja subentende que sera usado o model do departments, e para ele subentender é necessario ter dado o import
+            que aqui seria esse model IEnumerable<MVC.NET.Models.Departament>
+        -->
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

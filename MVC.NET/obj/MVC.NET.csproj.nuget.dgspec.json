@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas\\OneDrive\\Documentos\\.Net\\Estudo\\MVC.NET\\MVC.NET\\MVC.NET.csproj": {}
+    "C:\\Users\\lucas\\OneDrive\\Documentos\\.Net\\MVC.NET\\MVC.NET\\MVC.NET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas\\OneDrive\\Documentos\\.Net\\Estudo\\MVC.NET\\MVC.NET\\MVC.NET.csproj": {
+    "C:\\Users\\lucas\\OneDrive\\Documentos\\.Net\\MVC.NET\\MVC.NET\\MVC.NET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Documentos\\.Net\\Estudo\\MVC.NET\\MVC.NET\\MVC.NET.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Documentos\\.Net\\MVC.NET\\MVC.NET\\MVC.NET.csproj",
         "projectName": "MVC.NET",
-        "projectPath": "C:\\Users\\lucas\\OneDrive\\Documentos\\.Net\\Estudo\\MVC.NET\\MVC.NET\\MVC.NET.csproj",
+        "projectPath": "C:\\Users\\lucas\\OneDrive\\Documentos\\.Net\\MVC.NET\\MVC.NET\\MVC.NET.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\OneDrive\\Documentos\\.Net\\Estudo\\MVC.NET\\MVC.NET\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\OneDrive\\Documentos\\.Net\\MVC.NET\\MVC.NET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
